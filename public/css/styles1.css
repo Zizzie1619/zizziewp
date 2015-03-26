@@ -1,0 +1,410 @@
+/* Scss Document */
+/* line 3, scss/styles1.scss */
+body {
+  background: #039;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 8, scss/styles1.scss */
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 14, scss/styles1.scss */
+header {
+  position: absolute;
+  z-index: 2000;
+  width: 14.688em;
+  top: 3.125em;
+}
+/* line 20, scss/styles1.scss */
+header h1 {
+  font-size: 1.875em;
+  /*font-weight: 400;*/
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0em 0.125em 0.125em rgba(0, 0, 0, 0.3);
+  padding: 1.250em;
+  background: #000;
+}
+
+/* line 31, scss/styles1.scss */
+nav {
+  margin-top: 1.250em;
+  width: 14.688em;
+  display: block;
+  list-style: none;
+  z-index: 3;
+}
+/* line 38, scss/styles1.scss */
+nav ul {
+  list-style: none;
+  position: right;
+}
+/* line 43, scss/styles1.scss */
+nav a {
+  color: #000;
+  display: block;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  line-height: 3.125em;
+  padding: 0.000em 1.250em;
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 0.375em;
+  box-shadow: 0em 0.125em 0.125em rgba(0, 0, 0, 0.2);
+  font-size: 0.875em;
+  text-decoration: none;
+}
+/* line 58, scss/styles1.scss */
+nav:hover {
+  background: #ddd;
+}
+
+/* line 63, scss/styles1.scss */
+.panel {
+  width: 98%;
+  min-height: 100%;
+  position: absolute;
+  background-color: #000;
+  box-shadow: 0.25em -0.25em 0.25em rgba(0, 0, 0, 0.2);
+  margin-left: -102%;
+  z-index: 2;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 78, scss/styles1.scss */
+.panel:target {
+  margin-left: 0%;
+  background-color: #ffcb00;
+}
+
+/* line 84, scss/styles1.scss */
+.content {
+  right: 2.500em;
+  left: 17.500em;
+  top: 0.000em;
+  position: absolute;
+  padding-bottom: 1.875em;
+}
+/* line 92, scss/styles1.scss */
+.content .content h2 {
+  font-size: 2.188em;
+  padding: 10px 0.000em 20px 0.000em;
+  margin-top: 3.250em;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0em 0.125em 0.125em rgba(0, 0, 0, 0.3);
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 102, scss/styles1.scss */
+.content .content p {
+  font-size: 1.125em;
+  padding: 10px;
+  line-height: 24px;
+  margin: 3px 0px;
+  color: #fff;
+  display: inline-block;
+}
+
+/* line 116, scss/styles1.scss */
+#home:target ~ header nav #link-home,
+#about:target ~ header nav #link-about,
+#work:target ~ header nav #link-work,
+#contact:target ~ header nav #link-contact {
+  background: #000;
+  color: #fff;
+}
+
+/* line 122, scss/styles1.scss */
+#about.panel {
+  background: #0C6;
+}
+
+/* line 126, scss/styles1.scss */
+#work.panel {
+  background: #906;
+}
+
+/* line 130, scss/styles1.scss */
+#contact.panel {
+  background: #FF7676;
+}
+
+/* line 134, scss/styles1.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 2.188em;
+  padding-bottom: 0.125em;
+  z-index: 3;
+  color: #CCC;
+}
+
+/* line 144, scss/styles1.scss */
+#profile_img {
+  width: 100%;
+  height: auto;
+  max-width: 248px;
+  max-height: 248px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+
+/* form styles */
+/* line 159, scss/styles1.scss */
+.input {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 1em;
+  max-width: 350px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+  overflow: hidden;
+  padding-bottom: 2.5em;
+}
+
+/* line 171, scss/styles1.scss */
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: 400;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */
+  padding: 0;
+  margin-top: 1.2em;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  font-size: 1.55em;
+  /*social media icons */
+  /* photo grid */
+}
+/* line 189, scss/styles1.scss */
+.input__field:focus {
+  outline: none;
+}
+/* line 194, scss/styles1.scss */
+.input__field .input__label {
+  float: right;
+  font-weight: bold;
+  font-size: 70.25%;
+  user-select: none;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  pointer-events: none;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.2s 0.1s, color 0.3s;
+  transition: transform 0.2s 0.1s, color 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 218, scss/styles1.scss */
+.input__field .input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+/* line 225, scss/styles1.scss */
+.input__field .graphic {
+  position: absolute;
+  left: 0;
+  fill: none;
+  stroke: #fff;
+  pointer-events: none;
+  stroke-width: 2px;
+  top: 1.25em;
+  bottom: 0px;
+  height: 3.275em;
+  -webkit-transition: -webkit-transform 0.7s, stroke 0.7s;
+  transition: transform 0.7s, stroke 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+/* line 241, scss/styles1.scss */
+.input__field .icon {
+  color: #ddd;
+  font-size: 150%;
+}
+/* line 247, scss/styles1.scss */
+.input__field .input__field:focus + .input__label,
+.input__field .input--filled .input__label {
+  color: #fff;
+  -webkit-transform: translate3d(0, 3.5em, 0) scale3d(0.85, 0.85, 1);
+  transform: translate3d(0, 3.5em, 0) scale3d(0.85, 0.85, 1);
+}
+/* line 254, scss/styles1.scss */
+.input__field .input__field:focus ~ .graphic,
+.input__field .input--filled .graphic {
+  stroke: #fff;
+  -webkit-transform: translate3d(-66.6%, 0, 0);
+  transform: translate3d(-66.6%, 0, 0);
+}
+/* line 260, scss/styles1.scss */
+.input__field section {
+  float: left;
+}
+/* line 265, scss/styles1.scss */
+.input__field #submit {
+  border: 1px solid #FFF;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  width: 80px;
+  height: auto;
+  color: #FFF;
+  padding: 2px 2px 2px 2px;
+  text-align: center;
+}
+/* line 278, scss/styles1.scss */
+.input__field #submit a {
+  text-decoration: none;
+  color: #FFF;
+}
+/* line 283, scss/styles1.scss */
+.input__field #submit:hover {
+  color: #CCC;
+}
+/* line 291, scss/styles1.scss */
+.input__field .social {
+  float: left;
+  margin: 0.289em 0.289em;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 43px;
+  color: #fff;
+  position: relative;
+  transform: rotateY(0deg);
+  transition: transform .25s ease-out;
+  transform-style: preserve-3d;
+  z-index: 5;
+}
+/* line 302, scss/styles1.scss */
+.input__field .social > div {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+/* line 307, scss/styles1.scss */
+.input__field .social > .front {
+  transform: translateZ(15px);
+  z-index: 5;
+}
+/* line 311, scss/styles1.scss */
+.input__field .social > .back {
+  background: #3B5998;
+  font-size: 1em;
+  transform: rotateY(-15deg) translateZ(15px);
+  z-index: 5;
+}
+/* line 317, scss/styles1.scss */
+.input__field .social:hover {
+  transform: rotateY(35deg);
+}
+/* line 323, scss/styles1.scss */
+.input__field .social.social-twitter > .back {
+  background: #55ACEE;
+}
+/* line 324, scss/styles1.scss */
+.input__field .social.social-pinterest > .back {
+  background: #e3262e;
+}
+/* line 325, scss/styles1.scss */
+.input__field .social.social-googleplus > .back {
+  background: #dd4B39;
+}
+/* line 329, scss/styles1.scss */
+.input__field .hover-grid .hover-grid-item {
+  width: 181px;
+  height: 181px;
+  margin: 0 18px 18px 0;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  /*-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;*/
+}
+/* line 344, scss/styles1.scss */
+.input__field .hover-grid img {
+  /*-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50;*/
+  border: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+/* line 359, scss/styles1.scss */
+.input__field .hover-grid-item .caption {
+  background-color: #fff;
+  width: 155px;
+  height: 155px;
+  padding: 18px;
+  position: absolute;
+  left: 0;
+  color: #000;
+  display: none;
+  line-height: 1.1;
+  /*	-webkit-border-radius: 50%;
+  	-moz-border-radius: 50%;
+  	-ms-border-radius: 50%;
+  	-o-border-radius: 50%;
+  	border-radius: 50%;*/
+}
+/* line 374, scss/styles1.scss */
+.input__field .hover-grid-item .caption .caption p {
+  font-size: 15px;
+  color: #000;
+  padding: 2px;
+  line-height: 20px;
+  margin: 2px 0px;
+}
+/* line 382, scss/styles1.scss */
+.input__field .hover-grid-item .caption .caption h2 {
+  font-size: 1.235em;
+  color: #000;
+  padding-left: 20px;
+  margin-top: 0.000em;
+}
